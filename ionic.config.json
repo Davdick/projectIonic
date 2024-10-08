@@ -1,0 +1,7 @@
+{
+  "name": "projectpro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
