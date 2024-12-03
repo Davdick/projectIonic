@@ -55,7 +55,7 @@ export class AppComponent {
   // Consultar el API y mostrar notificaciones
   async getNotisPush() {
     try {
-      const response = await fetch('https://localhost:7196/api/sign/xd'); // Cambia esta URL por la real
+      const response = await fetch('https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/xd/xd'); // Cambia esta URL por la real
       const data = await response.json();
 
       console.log('Respuesta de la API:', data);

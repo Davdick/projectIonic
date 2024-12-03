@@ -9,10 +9,10 @@ import { Observable } from 'rxjs';
 export class PostService {
 
   private apiUrl = 'https://jsonplaceholder.typicode.com/posts';
-  private apiSign = 'https://localhost:7196/api/sign/signup';
-  private certifications = "https://localhost:7196/api/sign/certifications"
+  private apiSign = 'https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/signup';
+  private certifications = "https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/certifications"
   private apiPrueba = 'https://jsonplaceholder.typicode.com/todos/1';
-  private pushAPI = 'https://localhost:7196/api/sign/xd';
+  private pushAPI = 'https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/sign/xd';
 
   constructor(private http: HttpClient) { }
 

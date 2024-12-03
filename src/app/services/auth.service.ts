@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 export class AuthService {
 
   public isAuthenticated = false;
-  private  apiLogin = 'https://localhost:7196/api/sign/login';
-  private  apiSign = 'https://localhost:7196/api/sign/signup';
+  private  apiLogin = 'https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/login';
+  private  apiSign = 'https://backendportafolio-a3czbee8aah8aybc.mexicocentral-01.azurewebsites.net/api/sign/signup';
   
 
   constructor(private http: HttpClient) { }
