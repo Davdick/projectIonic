@@ -1,0 +1,149 @@
+<ion-content [fullscreen]="true">
+
+    <ion-list [inset]="true">
+      <h2>Contest Projects</h2>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">ICPC Mexico Finals</ion-label>
+        <ion-button color="tertiary" id="open-popover6">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Hackathon | Smart Security</ion-label>
+        <ion-button color="tertiary" id="open-popover">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Hackathon | TalentLand</ion-label>
+        <ion-button color="tertiary" id="open-popover2">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Hackathon | Hidrotechs</ion-label>
+        <ion-button color="tertiary" id="open-popover3">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">HackMex | IPN</ion-label>
+        <ion-button color="tertiary" id="open-popover4">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Hackathon CyberSecurity</ion-label>
+        <ion-button color="tertiary" id="open-popover5">See details</ion-button>
+      </ion-item>
+  
+    </ion-list>
+
+    
+    <ion-list [inset]="true">
+      <h2>Academic Projects</h2>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Videogame with JavaScript</ion-label>
+        <ion-button color="tertiary" id="open-popoverG">See details</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label style="font-weight: bold; color: #4caf50; font-size: 1.2rem;">Videogame with Godot</ion-label>
+        <ion-button color="tertiary" id="open-popoverG1">See details</ion-button>
+      </ion-item>
+    </ion-list>
+  <div class="main">
+    <app-post-test></app-post-test>
+  </div>
+  
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="4" size-lg="2">
+        
+      </ion-col>
+    </ion-row> -->
+  
+  
+  
+</ion-content>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 >Developed an artificial intelligence to prevent suicides, it was for the government of Aguascalientes.</h3>
+      <em>March 2023. Aguascalientes, Mexico.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover2">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 > I participated in a hackathon organized by TalentLand. Where I designed a sustainable
+        development project for Google Cloud. I successfully advanced to the semifinals with my project.</h3>
+      <em>April 2024. Guadalajara, Mexico.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover3">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3>  ICP (Internet Computer Protocol) Hackathon, where I developed a solution to optimize water distribution in Aguascalientes, Mexico. This
+        project successfully advanced to the final round with WEB 3.0 and Blockchain Technology</h3>
+      <em>July 2024. Aguascalientes, Mexico.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover4">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3>  I competed in the largest ethical hacking event in Mexico, organized by the National Polytechnic Institute. This
+        Capture the Flag (CTF) competition saw me achieving a 41st place finish.</h3>
+      <em>August 2024. Remote.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover5">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 > ICP(Internet Computer Protocol) Software with AI that analyzes 911 calls and helps operators with transcripts and analysis. 
+        This project successfully advanced to the final round using WEB 3.0 and Blockchain Technology
+      </h3>
+      <em>October 2024. Aguascalientes, Mexico.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popover6">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 > I qualified and competed in the national final of ICPC(International Collegiate 
+        Programming Contest) Mexico. The longest-running and most prestigious
+        programming competition in the world.
+      </h3>
+      <em>November 2024. Monterrey Nuevo Leon, Mexico.</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popoverG">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 > You can play this game <a href="https://davdick.github.io/Game_With_CanvasJavascript/">here</a>
+      </h3>
+      <em>May 2024</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-popover [keepContentsMounted]="true" trigger="open-popoverG1">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <h3 > You can play this game <a href="https://davdick.github.io/FlappyUTAGS-Godot/">here</a>
+      </h3>
+      <em>November 2024</em>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
+

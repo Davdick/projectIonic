@@ -1,0 +1,21 @@
+
+
+ion-col {
+    
+   
+    color: #fff;
+    text-align: center;
+  }
+  a {
+    color: inherit;      /* Usa el color del elemento padre o puedes definir uno específico */
+    text-decoration: none; /* Quita el subrayado */
+    font-size:xx-large;
+  }
+  a:hover{
+    color:yellow;
+  }
+  ul {
+    list-style-type: none; /* Quita el símbolo de viñeta */
+    padding-left: 0; /* Opcional: elimina el espacio extra a la izquierda */
+  }
+  

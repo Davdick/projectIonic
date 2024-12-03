@@ -1,0 +1,68 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <app-header class="myheader"></app-header> 
+  </ion-toolbar>
+  
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  
+  
+   <div class="contmain">
+      <div class="cont1">
+        <div class="subcont1">
+          <hr>
+          <div></div>
+          <div>
+            <hr>
+            <p>This site has built in</p>
+            <ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
+            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="logo-angular" size="large" color="danger"></ion-icon>
+          </div>
+          <div></div>
+        </div>
+        <div class="subcont2">
+          <hr>
+          <div class="subsub1">
+
+          </div>
+          <div class="subsub2">
+            <hr>
+            <hr>
+            <h1>David Figueroa Jasso</h1>
+            <h2>Software Engineer</h2>
+          </div>
+          <div class="subsub3">
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="cont2">
+        <h1>About me</h1>
+        <img alt="selfie de david" src="../../../assets/image.png" width="200px">
+            <p>
+              Software developer with an Associate degree in Information Technology and 1.5 years of experience in web
+application development. Currently in the final semester of my university studies.
+My languages are Spanish (native) and English (Proficiency Certificate by Duolingo English Test).
+            </p>
+            <button (click)="showNotification()">Mostrar notificación</button>
+            <!-- <ion-button id="headerAnchor">Anchor to Header</ion-button> -->
+            <ion-content class="ion-padding">
+   
+              <ion-toast
+                trigger="headerAnchor"
+                position="top"
+                positionAnchor="header"
+                message="Hello World!"
+                duration="2000"
+              ></ion-toast>
+            </ion-content>
+            
+      </div>
+   </div> 
+
+
+
+</ion-content>

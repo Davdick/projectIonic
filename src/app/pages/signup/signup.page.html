@@ -1,0 +1,29 @@
+<hr>
+<ion-content>
+  <div>
+    <h1>SignUp</h1>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login">Regresar</ion-back-button>
+    </ion-buttons>
+    <form (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox slot="start" [(ngModel)]="agreed" name="agreed"></ion-checkbox>
+        <ion-label>
+          Acepto los <a href="../../../assets/TermsAndConditions.pdf" target="_blank" rel="noopener noreferrer">términos y condiciones</a>
+        </ion-label>
+      </ion-item>
+      
+      <ion-button expand="full" type="submit">Create</ion-button>
+    </form>
+  </div>
+  
+</ion-content>

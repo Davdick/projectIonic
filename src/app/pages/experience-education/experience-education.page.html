@@ -1,0 +1,74 @@
+<ion-content [fullscreen]="true">
+<hr>
+  <div>
+    
+    <h1>Experience</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <img src="../../../assets/sensataLogo.jpg" width="100px" height="100px">
+        </ion-col>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <h3>Intern in Sensata Technologies Inc.</h3>
+          <p>April 2023-June 2024</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h1>Education</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <img src="../../../assets/logo-uta.png" width="100px" height="100px">
+        </ion-col>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <h3> Associate Degree in Information Technology</h3>
+          <p>2021-2023</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <img src="../../../assets/logo-uta.png" width="100px" height="100px">
+        </ion-col>
+        <ion-col size="6" size-md="4" size-lg="2">
+          <h3> Software Engineering</h3>
+          <p>2023-2025</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h2>Certificates and Courses</h2>
+    <ion-list>
+      <ion-item *ngFor="let item of visibleData; let i = index;">
+        <ion-label>{{item.title}}</ion-label>
+        <a href={{item.redirectTo}}>You can see credential here</a>
+      </ion-item>
+    </ion-list>
+  
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+            
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <!-- <ion-list> 
+      <ion-item *ngFor="let item of visibleData; let i = index" (click)="openLink(item.redirectTo)">
+        <ion-label>
+          <h2>Item {{ i + 1 }}</h2>
+          <p>Title: {{ item.title }}</p>
+          <p>Institution: {{ item.institution }}</p>
+          <p>Date: {{ item.date }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
+  </div>
+</ion-content>
