@@ -12,10 +12,13 @@ ion-col {
     font-size:xx-large;
   }
   a:hover{
-    color:yellow;
+    color: grey;
   }
   ul {
     list-style-type: none; /* Quita el símbolo de viñeta */
     padding-left: 0; /* Opcional: elimina el espacio extra a la izquierda */
   }
-  
+ 
+  :host {
+    --ion-background-color: #f9f9f9;
+  }

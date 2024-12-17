@@ -6,63 +6,51 @@
 </ion-header> -->
 
 <ion-content [fullscreen]="true">
-  
-  
-   <div class="contmain">
-      <div class="cont1">
-        <div class="subcont1">
-          <hr>
-          <div></div>
-          <div>
-            <hr>
-            <p>This site has built in</p>
-            <ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
-            <ion-icon name="add-outline"></ion-icon>
-            <ion-icon name="logo-angular" size="large" color="danger"></ion-icon>
-          </div>
-          <div></div>
+  <div class="main-container">
+    <!-- Sección 1: Encabezado -->
+    <section class="header-section">
+      <div class="icons-container">
+        <hr />
+        <div class="icon-group">
+          <h1>This site has built on</h1>
+          
+
         </div>
-        <div class="subcont2">
-          <hr>
-          <div class="subsub1">
-
-          </div>
-          <div class="subsub2">
-            <hr>
-            <hr>
-            <h1>David Figueroa Jasso</h1>
-            <h2>Software Engineer</h2>
-          </div>
-          <div class="subsub3">
-           
-          </div>
-        </div>
+        <hr />
       </div>
-
-      <div class="cont2">
-        <h1>About me</h1>
-        <img alt="selfie de david" src="../../../assets/image.png" width="200px">
-            <p>
-              Software developer with an Associate degree in Information Technology and 1.5 years of experience in web
-application development. Currently in the final semester of my university studies.
-My languages are Spanish (native) and English (Proficiency Certificate by Duolingo English Test).
-            </p>
-            <button (click)="showNotification()">Mostrar notificación</button>
-            <!-- <ion-button id="headerAnchor">Anchor to Header</ion-button> -->
-            <ion-content class="ion-padding">
-   
-              <ion-toast
-                trigger="headerAnchor"
-                position="top"
-                positionAnchor="header"
-                message="Hello World!"
-                duration="2000"
-              ></ion-toast>
-            </ion-content>
-            
+      <div>
+        <h2>Frontend</h2>
+        <ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
+        <ion-icon name="add-outline" size="large"></ion-icon>
+        <ion-icon name="logo-angular" size="large" color="danger"></ion-icon>  
       </div>
-   </div> 
+      <div>
+        <h2>Backend</h2>
+        <!-- <img src="http://localhost:8100/assets/microsoft-dotnet.svg" alt="dot net icon" width="40" height="40">  -->
+         <img src="../../../assets/microsoft-dotnet.svg" width="60">
+      </div>
+      <div class="title-container">
+        <h1>David Figueroa Jasso</h1>
+        <h2>Software Engineer</h2>
+      </div>
+    </section>
+
+    <!-- Sección 2: Sobre Mí -->
+    <section class="about-section">
+      <h1>About me</h1>
+      <img alt="selfie de david" src="../../../assets/image.png" class="profile-img" />
+      <p>
+        I am a Software Engineer with  1.5 years of experience in developing high-quality web applications.
+         I specialize in backend development and embedded software,
+          with a focus on creating tailored software solutions that meet the unique needs of businesses.
+           My goal is to help clients optimize their operations and 
+           achieve their objectives through custom software solutions. 
+           I am fluent in Spanish (native) and have a B1 level in English. 
+           Driven by a passion for continuous learning, 
+           I am dedicated to delivering impactful and efficient software for my clients.
 
 
-
+      </p>
+    </section>
+  </div>
 </ion-content>

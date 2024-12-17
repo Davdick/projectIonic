@@ -10,18 +10,18 @@ import { LocalNotifications } from '@capacitor/local-notifications';
 })
 export class AppComponent {
   constructor(private platform: Platform, private toastController: ToastController) {
-    this.initializeApp();
+   
   }
 
-  async initializeApp() {
-    this.platform.ready().then(() => {
-      this.requestPermission();
-      this.showPushNotification('¡Tienes una nueva notificación!');
-      // setInterval(() => {
-      //   this.getNotisPush();
-      // }, 20000); // Cada 10 segundos
-    });
-  }
+  // async initializeApp() {
+  //   this.platform.ready().then(() => {
+  //     this.requestPermission();
+  //     this.showPushNotification('¡Tienes una nueva notificación!');
+  //     // setInterval(() => {
+  //     //   this.getNotisPush();
+  //     // }, 20000); // Cada 10 segundos
+  //   });
+  // }
 
 
   // Solicitar permisos según la plataforma

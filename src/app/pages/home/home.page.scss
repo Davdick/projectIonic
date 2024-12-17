@@ -1,141 +1,259 @@
-.contmain{
-  padding-top: 25%;
-}
+// .contmain{
+//   padding-top: 25%;
+// }
 
-.myheader{
-  z-index:1;
-}
-h1{
-    color: white;
-}
-ion-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+// .myheader{
+//   z-index:1;
+// }
+// h1{
+//     color: white;
+// }
+// ion-col {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
   
     
     
-    color: #fff;
-  }
-  ion-row {
-    display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos salten de línea si es necesario */
-  }
+//     color: #fff;
+//   }
+//   ion-row {
+//     display: flex;
+//     flex-wrap: wrap; /* Permitir que los elementos salten de línea si es necesario */
+//   }
 
-  .contmain {
-    display: flex; /* Usar flexbox para dividir la pantalla en dos */
-    height: 100%; /* Asegurarse de que el contenedor principal ocupe toda la altura */
-    margin-top: 2%;;
+//   .contmain {
+//     display: flex; /* Usar flexbox para dividir la pantalla en dos */
+//     height: 100%; /* Asegurarse de que el contenedor principal ocupe toda la altura */
+//     margin-top: 2%;;
     
-  }
+//   }
   
-  .cont1 {
-    flex: 1; /* La primera parte ocupa la mitad del ancho */
-    display: flex; /* Usar flexbox para dividir en columnas */
-    flex-direction: column; /* Alinear las columnas verticalmente */
-    background:linear-gradient(90deg, rgba(8,7,30,1) 26%, rgba(32,24,76,1) 100%, rgba(2,13,29,1) 100%);
-  }
+//   .cont1 {
+//     flex: 1; /* La primera parte ocupa la mitad del ancho */
+//     display: flex; /* Usar flexbox para dividir en columnas */
+//     flex-direction: column; /* Alinear las columnas verticalmente */
+//     background:linear-gradient(90deg, rgba(8,7,30,1) 26%, rgba(32,24,76,1) 100%, rgba(2,13,29,1) 100%);
+//   }
   
-  .subcont1,
-  .subcont2 {
-    flex: 1; /* Ambas subpartes ocupan el mismo espacio */
+//   .subcont1,
+//   .subcont2 {
+//     flex: 1; /* Ambas subpartes ocupan el mismo espacio */
    
     
-  }
+//   }
   
-  .cont2 {
-    flex: 1; /* La segunda parte ocupa la otra mitad del ancho */
-    background: linear-gradient(90deg, rgba(8,7,30,1) 26%, rgba(32,24,76,1) 100%, rgba(2,13,29,1) 100%);
+//   .cont2 {
+//     flex: 1; /* La segunda parte ocupa la otra mitad del ancho */
+//     background: linear-gradient(90deg, rgba(8,7,30,1) 26%, rgba(32,24,76,1) 100%, rgba(2,13,29,1) 100%);
     
-  }
-  .subsub2 img {
-    width: 350px; /* Ajustar el ancho deseado */
-    height: auto; /* Mantener la proporción de la imagen */
-}
-  /* Estilo responsivo */
-  @media (max-width: 768px) {
-    .contmain {
-      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-    }
+//   }
+//   .subsub2 img {
+//     width: 350px; /* Ajustar el ancho deseado */
+//     height: auto; /* Mantener la proporción de la imagen */
+// }
+//   /* Estilo responsivo */
+//   @media (max-width: 768px) {
+//     .contmain {
+//       flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+//     }
   
-    .cont1 {
-      flex-direction: row; /* Mantener las subcolumnas en fila */
-    }
+//     .cont1 {
+//       flex-direction: row; /* Mantener las subcolumnas en fila */
+//     }
   
-    .subcont1,
-    .subcont2 {
-      flex: 1; /* Asegurarse de que se distribuyan equitativamente */
-    }
-    .subcont1 div{
-        margin-top: 10%;
-      }
-      .subcont2 div{
-        margin-top: 10%;
-      }
+//     .subcont1,
+//     .subcont2 {
+//       flex: 1; /* Asegurarse de que se distribuyan equitativamente */
+//     }
+//     .subcont1 div{
+//         margin-top: 10%;
+//       }
+//       .subcont2 div{
+//         margin-top: 10%;
+//       }
 
-      .subcont2 {
-        display: flex; /* Usar flexbox para organizar el contenido */
-        flex-direction: column; /* Alinear elementos en una columna */
-        gap: 10px; /* Espacio entre filas */
-        padding: 20px; /* Espaciado interno */
+//       .subcont2 {
+//         display: flex; /* Usar flexbox para organizar el contenido */
+//         flex-direction: column; /* Alinear elementos en una columna */
+//         gap: 10px; /* Espacio entre filas */
+//         padding: 20px; /* Espaciado interno */
         
         
-    }
+//     }
     
-    .subsub2
-     {
-        flex: 1; /* Cada sub-subcontenedor ocupará el mismo espacio */
+//     .subsub2
+//      {
+//         flex: 1; /* Cada sub-subcontenedor ocupará el mismo espacio */
         
        
-        padding: 5px; /* Espaciado interno */
-    }
+//         padding: 5px; /* Espaciado interno */
+//     }
     
-    /* Ajustes específicos para la subsub2 */
-    .subsub2 {
-        display: flex; /* Flexbox para el contenido interno */
-        flex-direction: column; /* Alinear en columna */
-        align-items: center; /* Centrar contenido horizontalmente */
-    }
+//     /* Ajustes específicos para la subsub2 */
+//     .subsub2 {
+//         display: flex; /* Flexbox para el contenido interno */
+//         flex-direction: column; /* Alinear en columna */
+//         align-items: center; /* Centrar contenido horizontalmente */
+//     }
     
-    .subsub2 img {
-        max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
-        height: auto; /* Mantener la proporción de la imagen */
-    }
-    .subcont1 {
-        display: flex; /* Usar flexbox para organizar el contenido */
-        flex-direction: column; /* Alinear elementos en una columna */
-        gap: 10px; /* Espacio entre filas */
-        padding: 20px; /* Espaciado interno */
+//     .subsub2 img {
+//         max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+//         height: auto; /* Mantener la proporción de la imagen */
+//     }
+//     .subcont1 {
+//         display: flex; /* Usar flexbox para organizar el contenido */
+//         flex-direction: column; /* Alinear elementos en una columna */
+//         gap: 10px; /* Espacio entre filas */
+//         padding: 20px; /* Espaciado interno */
         
-    }
+//     }
     
-    .subcont1 div {
-        flex: 1; /* Cada sub-subcontenedor ocupará el mismo espacio */
+//     .subcont1 div {
+//         flex: 1; /* Cada sub-subcontenedor ocupará el mismo espacio */
     
-        padding: 10px; /* Espaciado interno */
-    }
+//         padding: 10px; /* Espaciado interno */
+//     }
     
-    /* Estilo específico para la segunda fila que contiene el texto */
-    .subcont1 div:nth-child(2) {
-        display: flex; /* Usar flexbox para centrar el contenido */
-        flex-direction: column; /* Alinear en columna */
-        align-items: center; /* Centrar contenido horizontalmente */
-    }
+//     /* Estilo específico para la segunda fila que contiene el texto */
+//     .subcont1 div:nth-child(2) {
+//         display: flex; /* Usar flexbox para centrar el contenido */
+//         flex-direction: column; /* Alinear en columna */
+//         align-items: center; /* Centrar contenido horizontalmente */
+//     }
     
-    /* Estilo del párrafo */
-    .subcont1 p {
-        text-align: center; /* Centrar el texto */
-        margin: 0; /* Eliminar márgenes por defecto */
-    }
-    img{
-      padding-left: 30%;
-    }
-    .contmain{
-      padding: 5%;
-    }
+//     /* Estilo del párrafo */
+//     .subcont1 p {
+//         text-align: center; /* Centrar el texto */
+//         margin: 0; /* Eliminar márgenes por defecto */
+//     }
+//     img{
+//       padding-left: 30%;
+//     }
+//     .contmain{
+//       padding: 5%;
+//     }
     
+//   }
+  
+  
+/* Estilo General */
+:host {
+  --ion-background-color: #f9f9f9;
+  --padding-bottom: 0;
+
+}
+
+.main-container {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 2rem;
+  // padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  gap: 2rem;
+  padding: 1rem;
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  box-sizing: border-box; /* Evita problemas con padding */
+}
+ion-content {
+  --background: #f9f9f9; /* Fondo opcional */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Section */
+.header-section {
+  background: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color:#333;
+  font-size: 2rem;
+}
+
+.title-container {
+  margin-top: 1rem;
+}
+
+.title-container h1 {
+  font-size: 2rem;
+  color: #666;
+  margin: 0;
+}
+
+.title-container h2 {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    gap: 2rem;
   }
-  
-  
+
+  .header-section,
+  .about-section {
+    flex: 1;
+  }
+
+  .header-section {
+    order: 1;
+  }
+
+  .about-section {
+    order: 2;
+  }
+}
   

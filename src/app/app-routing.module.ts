@@ -27,8 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'contact',
-    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule),
-    canActivate: [AuthGuard]
+    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
+    //,canActivate: [AuthGuard]
   },
   // {
   //   path: 'login',

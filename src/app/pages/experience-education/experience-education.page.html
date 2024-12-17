@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<!-- <ion-content [fullscreen]="true">
 <hr>
   <div>
     
@@ -54,21 +54,79 @@
             
         </ion-infinite-scroll-content>
     </ion-infinite-scroll>
-    <!-- <ion-list> 
-      <ion-item *ngFor="let item of visibleData; let i = index" (click)="openLink(item.redirectTo)">
-        <ion-label>
-          <h2>Item {{ i + 1 }}</h2>
-          <p>Title: {{ item.title }}</p>
-          <p>Institution: {{ item.institution }}</p>
-          <p>Date: {{ item.date }}</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-    
-    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
-      </ion-infinite-scroll-content>
-    </ion-infinite-scroll> -->
+  </div>
+</ion-content> -->
 
+<ion-content [fullscreen]="true">
+  <div class="content-container">
+    <!-- Sección de Experiencia -->
+    <section>
+      <h1>Experience</h1>
+      <ion-grid>
+        <ion-row class="align-center">
+          <ion-col size="12" size-md="3" class="logo-column">
+            <img src="../../../assets/sensataLogo.jpg" alt="Sensata Logo" class="company-logo" />
+          </ion-col>
+          <ion-col size="12" size-md="9" class="details-column">
+            <h3>Intern in Sensata Technologies Inc.</h3>
+            <p>April 2023 - June 2024</p>
+            <p>Aguascalientes, Mexico</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+
+    <!-- Sección de Educación -->
+    <section>
+      <h1>Education</h1>
+      <ion-grid>
+        <ion-row class="align-center">
+          <ion-col size="12" size-md="3" class="logo-column">
+            <img src="../../../assets/logo-uta.png" alt="UTA Logo" class="school-logo" />
+          </ion-col>
+          <ion-col size="12" size-md="9" class="details-column">
+            <h3>Associate Degree in Information Technology</h3>
+            <p>2021 - 2023</p>
+            <p>Aguascalientes, Mexico</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="align-center">
+          <ion-col size="12" size-md="3" class="logo-column">
+            <img src="../../../assets/logo-uta.png" alt="UTA Logo" class="school-logo" />
+          </ion-col>
+          <ion-col size="12" size-md="9" class="details-column">
+            <h3>Bachelor's Degree in Software Engineering</h3>
+            <p>2023 - 2025</p>
+            <p>Aguascalientes, Mexico</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+
+    <!-- Sección de Certificados -->
+    <section>
+      <h1>Certificates and Courses</h1>
+      <ion-list>
+        <ion-item *ngFor="let item of visibleData; let i = index;">
+          <ion-label>
+            <h3>{{ item.title }}</h3>
+            <h4>View credential:
+              <a [href]="item.redirectTo" target="_blank" class="credential-link">here</a>
+            </h4>
+            
+          </ion-label>
+          
+        </ion-item>
+      </ion-list>
+    </section>
+
+    <!-- Infinite Scroll -->
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </div>
 </ion-content>

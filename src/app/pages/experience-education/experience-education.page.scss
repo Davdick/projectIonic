@@ -1,0 +1,99 @@
+/* Contenedor principal
+  color verde cool: #4caf50
+*/
+:host {
+  --ion-background-color: #f9f9f9;
+}
+.content-container {
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Secciones */
+  section {
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezados */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+  
+  /* Logos e imágenes */
+  .company-logo,
+  .school-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .logo-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  /* Lista de certificados */
+  ion-item {
+    --background: #fff;
+    --border-color: #ddd;
+  }
+  
+  .credential-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .credential-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Alineación de filas */
+  .align-center {
+    align-items: center;
+  }
+  
+  /* Responsividad */
+  @media (min-width: 768px) {
+    .content-container {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .details-column h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
